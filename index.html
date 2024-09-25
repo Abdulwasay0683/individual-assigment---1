@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Webpage</title>
+
+    <style>
+        /* Header Section */
+        #main-header {
+            display: flex;
+            background-color: #e3f2fd; /* Light blue */
+            height: 3rem;
+            justify-content: space-around;
+            color: #333; /* Dark grey */
+            align-items: center;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+        .top-bar svg {
+            margin-right: 0.5rem;
+        }
+        .search-btn {
+            background-color: #00796b; /* Teal */
+            height: 2.5rem;
+            width: 4rem;
+            border: none;
+            color: white;
+        }
+        .search-input {
+            width: 16.25rem;
+            height: 1.3rem;
+            padding: 0.5rem;
+            border: 1px solid #00796b;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.25rem;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 40rem;
+            background-image: url('img.jfif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10%;
+        }
+        .site-logo {
+            color: #fff;
+            font-size: 2.75rem;
+            font-weight: bold;
+        }
+        .navbar {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .navbar li {
+            margin: 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .navbar a:hover {
+            color: #00796b;
+        }
+        .banner-img{
+            position: relative;
+        }
+        .hero-text {
+            color: #fff;
+            margin-left: 10%;
+        }
+        .headline-primary {
+            color: #4db6ac;
+            font-size: 3rem;
+        }
+        .headline-secondary {
+            font-size: 4.5rem;
+            color: #fff;
+        }
+        .subtext {
+            color: #ccc;
+            margin-top: 1rem;
+        }
+        .cta-btn {
+            background: transparent;
+            border: 2px solid #4db6ac;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+
+        /* Features Section */
+        #feature-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 4rem 10%;
+            background-color: #f5f5f5; /* Light grey */
+        }
+        .feature-box {
+            width: 25%;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            padding: 2rem;
+            text-align: center;
+        }
+        .feature-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00796b;
+        }
+        .feature-text {
+            color: #fff;
+            margin-top: 1rem;
+        }
+
+        /* Courses Section */
+        .courses-section {
+            text-align: center;
+            padding: 3rem 10%;
+        }
+        .courses-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .courses-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+        .course-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+        .course-card img {
+            width: 100%;
+            height: 17rem;
+        }
+        .course-details {
+            padding: 20px;
+            text-align: left;
+        }
+        .course-rating {
+            color: #ffeb3b;
+            margin-bottom: 10px;
+        }
+        .course-title {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .course-price {
+            font-weight: bold;
+            color: #00796b;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #00796b;
+            color: #fff;
+            padding: 2rem 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-col {
+            width: 30%;
+        }
+        .footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #4db6ac;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <section id="main-header">
+        <div class="top-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2rem" viewBox="0 0 24 24" fill="none" stroke="#00796b">
+                <path d="M3 7h18M3 7l9 6 9-6v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/>
+            </svg>
+            contact@example.com
+        </div>
+        <div class="top-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="top-bar">
+            <a href="#" class="nav-link">Sign Up</a> / <a href="#" class="nav-link">Login</a>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="overlay">
+           
+            <div class="site-logo">EduPlus</div>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="image" alt="">
+        </div>
+        <div class="hero-text">
+            <h1 class="headline-primary">Your Future</h1>
+            <h2 class="headline-secondary">Starts Here</h2>
+            <p class="subtext">Learn the skills that matter from top educators worldwide.</p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="feature-section">
+        <div class="feature-box">
+            <h3 class="feature-heading">Expert Teachers</h3>
+            <p class="feature-text">Learn from the best in the industry.</p>
+        </div>
+        <div class="feature-box">
+            <h3 class="feature-heading">Quality Courses</h3>
+            <p class="feature-text">Access to world-class education at your fingertips.</p>
+        </div>
+        <div class="feature-box">
+            <h3 class="feature-heading">Student Community</h3>
+            <p class="feature-text">Join a thriving community of learners.</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <h2>Popular Courses</h2>
+        <div class="courses-list">
+            <div class="course-card">
+                <img src="th.jfif" alt="Course 1">
+                <div class="course-details">
+                    <div class="course-rating">⭐⭐⭐⭐ (4.5)</div>
+                    <h3 class="course-title">Complete Web Development Bootcamp</h3>
+                    <p class="course-price">Free</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="th (1).jfif" alt="Course 2">
+                <div class="course-details">
+                    <div class="course-rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <h3 class="course-title">Advanced Java Programming</h3>
+                    <p class="course-price">$50</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-col">
+            <h3>EduPlus</h3>
+            <p>Bringing the best online learning experience to students worldwide.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p>Email: info@eduplus.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
